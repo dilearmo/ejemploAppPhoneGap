@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SpotiDi</title>
+	<script type="text/javascript" src="scripts/index.js"></script>
+	<script src="scripts/jquery-3.0.0.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="themes/MisThemes.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" data-theme="a">
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<label for="artista">Artista:</label>
+				<input type="text" id="artista" />
+			</div>
+			<button onclick="BuscarArtista()">Buscar</button>
+			<ul id="listaArtistas" data-role="listview" data-inset="true"></ul>
+		</div>
+	</div>
+
+	<div data-role="page" id="artista">
+		<div data-role="content">
+			<div style="text-align: center;">
+				<h3 id="nombreArtista">Nombre del artista: </h3>
+				<p id="seguidores">Seguidores: </p>
+				<img id="imagen" alt="imagen">
+			</div>
+			<ul id="cancionesMasPopulares" data-inset="true" data-role="listview"></ul>
+		</div>
+	</div>
+</body>
+</html>
