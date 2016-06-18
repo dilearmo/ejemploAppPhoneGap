@@ -17,4 +17,9 @@
         Diego Leonardo Arias Mora 
     </author>
 
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <access origin="*" />
+    <allow-intent href="*" />
+    <allow-navigation href="*" />
+
 </widget>
